@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" nodeOrientation="RIGHT_TO_LEFT" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.database.plsql.CourseController">
+     <children>
+  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="463.0" prefWidth="734.0" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <TableView fx:id="DataCourse" layoutX="300.0" layoutY="119.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="331.0" prefWidth="434.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="119.0">
+              <columns>
+                <TableColumn fx:id="CourseID" prefWidth="75.0" text="COURSE_ID" />
+                <TableColumn fx:id="CourseName" prefWidth="111.0" text="TITLE" />
+                  <TableColumn fx:id="CourseDeptName" prefWidth="114.0" text="DEPT_NAME" />
+                  <TableColumn fx:id="CourseTotCred" prefWidth="104.0" text="tot_creCREDITSd" />
+              </columns>
+            </TableView>
+            <Button id="butonAdd" fx:id="button" layoutX="106.0" layoutY="324.0" mnemonicParsing="false" onAction="#Add" prefHeight="25.0" prefWidth="70.0" text="Add" />
+            <TextField fx:id="Course_ID" layoutX="81.0" layoutY="103.0" promptText="رقم المساق" />
+            <TextField fx:id="Course_Name" layoutX="81.0" layoutY="153.0" promptText="اسم المساق" />
+            <TextField fx:id="Course_Cred" layoutX="81.0" layoutY="256.0" promptText="CREDITS" />
+            <ComboBox fx:id="Course_Dept" layoutX="80.0" layoutY="205.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" promptText="اسم القسم" />
+            <TextField fx:id="search" layoutX="345.0" layoutY="47.0" prefHeight="25.0" prefWidth="375.0" promptText="ابحث هنا ...." />
+            <Button fx:id="close" layoutX="107.0" layoutY="364.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Close" />
+            <Label layoutX="3.0" layoutY="72.0" prefHeight="30.0" prefWidth="384.0" text="لتعديل على اي كورس اضغط على اي صف واذا اردت الحذف اضغط ضغطتين" />
+            <Label fx:id="message" layoutX="71.0" layoutY="438.0" prefHeight="17.0" prefWidth="133.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="105.0" layoutY="404.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="70.0" text="Back" />
+   </children>
+</AnchorPane>

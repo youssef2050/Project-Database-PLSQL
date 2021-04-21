@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="project.database.plsql.TakesController">
+   <children>
+      <TableView fx:id="TakesTable" prefHeight="363.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="ID_Column" text="ID" />
+          <TableColumn fx:id="Coutse_Id_column" prefWidth="97.0" text="COURSE_ID" />
+            <TableColumn fx:id="Sec_id_column" prefWidth="93.0" text="SEC_ID" />
+            <TableColumn fx:id="Semester_column" prefWidth="90.0" text="SEMESTER" />
+            <TableColumn fx:id="Year_column" prefWidth="98.0" text="YEAR" />
+            <TableColumn fx:id="Grade_column" prefWidth="104.0" text="GRADE" />
+        </columns>
+      </TableView>
+      <Button layoutX="265.0" layoutY="363.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+   </children>
+</AnchorPane>

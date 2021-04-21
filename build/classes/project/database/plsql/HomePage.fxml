@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="LayoutHomePage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="463.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.database.plsql.HomePageController">
+   <children>
+  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="344.0" prefWidth="734.0" AnchorPane.bottomAnchor="119.0">
+         <children>
+            <TableView fx:id="DataStudent" layoutX="300.0" layoutY="119.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="331.0" prefWidth="434.0" AnchorPane.bottomAnchor="-119.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="119.0">
+              <columns>
+                <TableColumn fx:id="SutdentID" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="SutdentName" prefWidth="111.0" text="Name" />
+                  <TableColumn fx:id="SutdentDeptName" prefWidth="114.0" text="Department Name" />
+                  <TableColumn fx:id="SutdentTotCred" prefWidth="104.0" text="tot_cred" />
+              </columns>
+            </TableView>
+            <Label layoutX="34.0" layoutY="37.0" text="Register a new Student" textAlignment="CENTER" textFill="#111111">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button id="butonAdd" fx:id="button" layoutX="106.0" layoutY="324.0" mnemonicParsing="false" onAction="#Add" prefHeight="25.0" prefWidth="70.0" text="Add" />
+            <TextField fx:id="Student_ID" layoutX="81.0" layoutY="103.0" promptText="رقم الطالب" />
+            <TextField fx:id="Student_Name" layoutX="81.0" layoutY="153.0" promptText="اسم الطالب" />
+            <TextField fx:id="Student_Cred" layoutX="81.0" layoutY="256.0" promptText="tot_cred" />
+            <ComboBox fx:id="Student_Dept" layoutX="80.0" layoutY="205.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" promptText="اسم القسم" />
+            <TextField fx:id="search" layoutX="345.0" layoutY="47.0" prefHeight="25.0" prefWidth="375.0" promptText="ابحث هنا ...." />
+            <Button fx:id="close" layoutX="107.0" layoutY="364.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Close" />
+            <Label layoutX="3.0" layoutY="72.0" prefHeight="30.0" prefWidth="372.0" text="لعمل تعديل اضغط على اي صف من جدول واذا اردت الحذف اضغط ضغتين " />
+         </children>
+      </AnchorPane>
+      <Label fx:id="message" layoutX="76.0" layoutY="408.0" prefHeight="17.0" prefWidth="133.0" />
+      <Button layoutX="108.0" layoutY="396.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="68.0" text="Back" />
+   </children>
+</AnchorPane>
